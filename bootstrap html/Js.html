@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="">
+    <button id="btn" onclick="button-clicked">Click</button>
+
+    <!-- How inner html change through JS -->
+    <p id="demo">Fatima Malik</p>
+    <button onclick="changeText()">Click</button>
+    <script>
+        function changeText() {
+        document.getElementById('demo').innerHTML = 'Fatima Umer';
+    }
+    // we can add if else cond to it also
+    var someCondition = true;
+    if(someCondition) {
+        document.getElementById('btn').addEventListener('click', function() {
+                alert('button-clicked');
+            });
+    }  
+    else{
+        document.getElementById('btn').addEventListener('mouseover', function() {
+                alert('button mouseOver');
+        });
+    }
+    // how to make object null
+    var obj = {
+        id:1
+    }
+    // how to make undefined 
+    var x;
+    
+    obj = null
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header, footer, .right-sidebar, .left-sidebar, main{
+    padding: 45px;
+    border: 1px solid black;
+}
+header, footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 10px;
+}
+.left-sidebar{
+    width: 5%;
+    float: left;
+    height: 80vh;
+    text-align: center;
+    background-color: #e2dfdf;
+}
+.right-sidebar{
+    width: 5%;
+    float: right;
+    height: 80vh;
+    text-align: center;
+    background-color: #e2dfdf;
+   
+}
+main{
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+    
+    
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <style>
+    /* Custom styles for the sidebar */
+   
+    .sidebar {
+      height: 100vh;
+      background-color: #d9d6d6;
+      width: 10%;
+      float: right;
+      height: 100vh;
+      text-align: center;
+      right: 0;
+      padding-top: 4rem;
+    }
+    .left-sidebar{
+        height: 100vh;
+       background-color: #d9d6d6;
+       width: 10%;
+       float: left;
+       height: 100vh;
+       text-align: center;
+       right: 0;
+       padding-top: 4rem;
+    }
+    .main-section {
+    margin-left: 220px; /* Adjust based on sidebar width */
+    padding: 20px;
+  }
+  </style>
+    
+</head>
+<!-- <body class="bg-body-tertiary" -->
+<body onload="displayCart()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./food..jpg"><img src="./food..jpg" alt="logo" height="50px" width="50px"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./navbar.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 mr-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          
+        </div>
+      </nav>
+      <!-- right sidebar  -->
+ 
+      <div class="sidebar">
+        <h5>Right Sidebar</h5>
+      </div>
+   <!-- left sidebar -->
+ <div class="left-sidebar">
+     <a href="Cart.html">Cart</a>
+    <i class="bi bi-cart4"></i>
+     <br><br>
+     <a href="Wishlist.html">Wishlist</a>
+     <i class="bi bi-bag-heart-fill"></i>
+</div>
+<div class="main-section">
+  <!-- Cart items go here -->
+  <div id="cart-items">
+    
+  
+    <!-- <div class="py-5 text-align">
+      <h2>Shopping Cart</h2>
+    </div>
+
+    <div class="row g-5 justify-content-end">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-0">
+        <span>Order Summary</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Subtotal</h6>
+            </div>
+            <span class="text-body-secondary">$00.00</span>
+          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+            <div>
+                <h6 class="my-0">Shipping</h6>
+            </div>
+            <span class="text-body-secondary">Free</span>
+              
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span><strong>Total</strong></span>
+            <strong>$00.00</strong>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary">Checkout</button>
+    </div>
+  </div> -->
+  </div>
+  <!-- main section -->
+  <div class="col mt-3">
+    <h1 class="mb-3">Shoping Cart</h1>
+    <div class="row">
+        <div class="col-md-8" id="cart-items">
+
+            <!-- Repeat this card structure for more products -->
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Order Summary</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between" >
+                            Subtotal
+                            <span id="sub-total">$00.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between ">
+                            Shipping
+                            <span>Free</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between" >
+                            Total
+                            <span id="total">$00.00</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg mt-3">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
