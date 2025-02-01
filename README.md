@@ -21,6 +21,7 @@ CSS Framework: Bootstrap (No separate CSS file)
 # Project Files
 
 The project contains the following files:
+
 1️⃣ page_layout.html
 Home page layout.
 Displays all food items.
@@ -53,7 +54,7 @@ Manages wishlist and cart operations.
 Contains the function to dynamically display cart products.
 Installation & Usage
 Clone the repository:
-git clone https://github.com/yourusername/Food-Order-App.git
+git clone https://github.com/FatimaMalik9/Food_Order_Project
 Open page_layout.html in a browser to start browsing food items.
 Add items to the wishlist or cart.
 Navigate to wishlist.html or cart.html to view and manage selected items.
